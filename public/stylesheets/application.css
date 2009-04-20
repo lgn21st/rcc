@@ -17,7 +17,7 @@
 #navigation a {
   text-decoration: none;
   color: #666;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 5px;
 }
 #navigation a:hover {
@@ -26,11 +26,14 @@
 
 body {
   background: url(/images/background.jpg) repeat-x;
+  font: 0.8em/1.5 "arial",sans-serif; 
+  color: #303030; 
 }
 
 #logo {
   position: relative;
-  left: 30px;
+  left: 10px;
+  top:10px;
   z-index: 2;
 }
 
@@ -39,8 +42,37 @@ body {
   top: -30px;
   height: 277px;
   background: url(/images/shanghai_night.jpg) no-repeat; 
+} 
+
+#panel-right { float:right; width:230px; padding: 15px 20px 10px 10px; color:#ffffff;
+	text-align:right; 
+	font-family:Verdana;
+	  } 
+
+#panel-right .date{
+	font-size:28px;
+}                  
+
+#panel-right .location{
+	font-size:24px;
 }
 
-#footer {
+#footer { 
+  height:122px; 
+  background: url(/images/bg_footer.jpg) repeat-x;  
   text-align: center;
-}
+}  
+
+a {color:#666;}
+a:link {color:#b41818;}
+a:hover {color:#b41818; text-decoration: none;}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #F5000C;
+}    
+
+h1 { font-size:200%; }
+h2 { font-size:170%; font-weight: normal;}
+h3 { font-size:105%; border-bottom: 1px solid #ddd;}
+h4 { font-size:120%; }
+h5 { font-size:100%; }

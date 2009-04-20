@@ -27,24 +27,25 @@
     </div>
 
     <div id="logo">
-      <img src="/images/logo.png" alt="Ruby Conf China 2009" width="180"/>
+      <img src="/images/logo.png" alt="Ruby Conf China 2009" />
     </div>
     <div id="cover" class="clear span-18">
-      
+       <div id="panel-right">
+       	<span class='date'>May 21st,2009<br />
+		<span class='location'>Shanghai China</span>
+       </div>
     </div>    
   </div>
 
-
-  
   <div id="content">
     <div>
       <%= flash[:notice] if flash[:notice] %>
     </div>
     <%= yield %>
-  </div>
-
+  </div> 
+  <hr />
+</div> 
   <div id="footer">
-    <hr />
     <p>
       <a href="/en/contact">Contact US</a> |
       <a href="/en/contact">Contact US</a> |
@@ -56,6 +57,6 @@
       <br />
   	  &copy; 2009 Shanghai on Rails, JavaEye
   </div>
-</div>
+
 </body>
 </html>
