@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/use/!svn/ver/12/trunk/app/views/admin
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/use/!svn/ver/12/trunk/app/views/admin/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/use/!svn/ver/12/trunk/app/views/admin/index.html.erb
+END
+versions.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/use/!svn/ver/12/trunk/app/views/admin/versions.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/use/!svn/ver/12/trunk/app/views/admin/new.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/use/!svn/ver/12/trunk/app/views/admin/_form.html.erb
+END
+delete.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/use/!svn/ver/12/trunk/app/views/admin/delete.html.erb
+END
+reorder.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/use/!svn/ver/12/trunk/app/views/admin/reorder.html.erb
+END
+_page_list_item.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/use/!svn/ver/12/trunk/app/views/admin/_page_list_item.html.erb
+END

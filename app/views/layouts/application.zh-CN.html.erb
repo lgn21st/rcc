@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Welcome to RubyConf China 2009!</title>
+
+<%= stylesheet_link_tag 'reset', 'style' %>
+<script src="/javascripts/jquery.js" type="text/javascript"></script>
+<script src="/javascripts/jquery-ui.js" type="text/javascript"></script>
+<script src="/javascripts/jrails.js" type="text/javascript"></script>
+
+<%= stylesheet_link_tag 'comatose_admin' %>
+<%= javascript_include_tag 'comatose_admin' %>
+
+<!--[if lte IE 6]>
+<%= stylesheet_link_tag 'legacy' %>
+<![endif]-->
+
+</head>
+<body>
+
+<div id="wrapper">
+  <div id="header" class="clear">
+    <h1><a href="/">RubyConf China 2009</a></h1>
+    <ul id="navigation">
+      <li><a href="/">首页</a></li>
+      <li><a href="/en/program" title="works">日程</a></li>
+      <li><a href="/en/register" title="about">注册</a></li>
+      <li><a href="/en/partners" title="Services">合作伙伴</a></li>
+      <li><a href="/en/about" title="Contact">关于</a></li>
+    </ul>
+    <h2>
+      <%= link_to image_tag('us.png'), set_language_session_path(:language => 'en'), :method => 'put' %>
+      <%= link_to image_tag('cn.png'), set_language_session_path(:language => 'zh-CN'), :method => 'put' %>
+    </h2>
+  </div>
+
+  <div id="content">
+    <div>
+      <%= flash[:notice] if flash[:notice] %>
+    </div>
+    <%= yield %>
+  </div>
+
+  <div id="footer">
+    <hr />
+    <p>
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a>                              
+      <br />
+  	  &copy; 2009 RubyConf China Team, <a href="http://webrevolutionary.com/sharpfolio/">Sharpfolio</a> Theme by <a href="http://webrevolutionary.com/">WebRevolutionary</a> &amp; <a href="http://www.forwebdesigners.com/">ForWebdesigners</a>.</p>
+  </div>
+</div>
+</body>
+</html>
