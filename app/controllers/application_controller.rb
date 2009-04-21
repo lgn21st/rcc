@@ -7,8 +7,9 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  before_filter :set_locale_from_url
 
-  before_filter :detect_language
+#  before_filter :detect_language
   
   private
     def detect_language

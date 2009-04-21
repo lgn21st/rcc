@@ -15,15 +15,15 @@
 <div class="container">
   <div id="header" class="clear span-18">
     <div id="languages">
-      <a href="/">English</a> |
-      <a href="＃">中文</a>
+      <%=link_to 'English',root_en_path%> |
+      <%=link_to '中文',root_zh_cn_path%>
     </div>
 
     <div id="navigation">
-      <a href="/">Home</a></li> |
-      <a href="/en/program" title="works">About</a></li> |
-      <a href="/en/program" title="works">Sponsors</a></li> |      
-      <a href="/en/register" title="about">Speakers</a></li>
+      <%=link_to t('home'),root_path %> |
+	  <%=link_to t('about'),about_path %> |
+	  <%=link_to t('sponsor'),sponsors_path %> | 
+	  <%=link_to t('speaker'),speakers_path %>     
     </div>
 
     <div id="logo">
@@ -31,8 +31,8 @@
     </div>
     <div id="cover" class="clear span-18">
        <div id="panel-right">
-       	<span class='date'>May 21st,2009<br />
-		<span class='location'>Shanghai China</span>
+       	<span class='date'><%= t('event_date')%> <br />
+		<span class='location'><%= t('location')%></span>
        </div>
     </div>    
   </div>

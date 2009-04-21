@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+<title>Welcome to RubyConf China 2009</title>
+
+<link rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/stylesheets/application.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print">	 
+<%= yield :javascripts_tag%>
+<!--[if IE]><link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection"><![endif]-->
+</head>
+<%= yield :body_tag %>
+
+<div class="container">
+  <div id="header" class="clear span-18">
+    <div id="languages">
+      <%=link_to 'English',root_en_path%> |
+      <%=link_to '中文',root_zh_cn_path%>
+    </div>
+
+    <div id="nav">
+	  <ul>
+		<li><%=link_to t('home'),root_path %></li>
+		<li><%=link_to t('about'),about_path %></li>
+		<li class='logo'>
+			<img src="/images/logo.png" alt="Ruby Conf China 2009" />
+		</li>
+		<li><%=link_to t('sponsor'),sponsors_path %></li>
+		<li><%=link_to t('speaker'),speakers_path %></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content">
+    <div>
+      <%= flash[:notice] if flash[:notice] %>
+    </div>
+    <%= yield %>
+  </div> 
+  <hr />
+</div> 
+  <div id="footer">
+    <p>
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a> |
+      <a href="/en/contact">Contact US</a>                              
+      <br />
+  	  &copy; 2009 Shanghai on Rails, JavaEye
+  </div>
+
+</body>
+</html>

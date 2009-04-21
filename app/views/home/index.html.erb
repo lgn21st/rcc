@@ -1,4 +1,9 @@
-<h2>Welcome to Ruby Conf China 2009</h2>
-Sessions goes here
-<h2>Location</h2>
-Location goes here
+<div class='span-14'>
+	<%= render :comatose=> "#{params[:locale]}/front" %>
+</div> 
+
+<div class='span-4 last'>
+   <h2><%= t('sponsor')%></h2>
+   <%= render :comatose=> "sponsors" %> 
+</div>
+

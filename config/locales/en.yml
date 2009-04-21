@@ -2,4 +2,11 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  home: "Home" 
+  about: "about"
+  sponsor: "sponsors"
+  speaker: "speakers"
+  event_date: "May 21st,2009"
+  location: "Shanghai China"
+  venue: "Shanghai Everbright Convention & Exhibition Center"
+  address: "(2F, 66 Caobao Road, Xuhui district, Shanghai, China)"

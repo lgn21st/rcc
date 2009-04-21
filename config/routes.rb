@@ -1,5 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
-  map.root :controller => 'home'
+  map.with_options :controller => 'home' do |home|
+    home.root  
+    home.about 'intro',:action => 'about'
+    home.sponsors 'sponsors',:action => 'sponsors'
+    home.speakers 'speakers',:action => 'speakers'
+  end
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
@@ -7,7 +12,7 @@ ActionController::Routing::Routes.draw do |map|
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :users
 
-  map.resource :session, :collection => {:set_language => :put}
+#  map.resource :session, :collection => {:set_language => :put}
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -52,5 +57,6 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id.:format'
   
   map.comatose_admin 'cms'
-  map.comatose_root '', :layout => 'application'
+  map.comatose_root ''
 end
+ActionController::Routing::Translator.i18n('en','zh-CN')

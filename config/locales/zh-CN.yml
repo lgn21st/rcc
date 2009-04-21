@@ -2,6 +2,15 @@
 # by tsechingho (http://github.com/tsechingho)
 
 "zh-CN":
+  home: "首页"
+  about: "关于"
+  sponsor: "赞助商"
+  speaker: "演讲者"
+  event_date: "2009年5月21号"
+  location: "中国 上海"
+  venue: "光大会展中心10号厅" 
+  address: "中国上海漕宝路66号B座5楼" 
+  
   date:
     formats:
       default: "%Y-%m-%d"
