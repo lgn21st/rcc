@@ -20,14 +20,14 @@
     </div>
 
     <div id="navigation">
-      <%=link_to t('home'),root_path %> |
-	  <%=link_to t('about'),about_path %> |
-	  <%=link_to t('sponsor'),sponsors_path %> | 
-	  <%=link_to t('speaker'),speakers_path %>     
+      <%=link_to t('loc'),location_path %> |
+      <%=link_to t('register'),register_path %> |
+      <%=link_to t('sponsor'),sponsors_path %> | 
+      <%=link_to t('speaker'),speakers_path %>     
     </div>
 
     <div id="logo">
-      <img src="/images/logo.png" alt="Ruby Conf China 2009" />
+      <a href="/"><img src="/images/logo.png" alt="Ruby Conf China 2009" /></a>
     </div>
     <div id="cover" class="clear span-18">
        <div id="panel-right">
@@ -47,14 +47,9 @@
 </div> 
   <div id="footer">
     <p>
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a>                              
-      <br />
+      <a href="/en/contact">Contact</a> |
+      <a href="/en/contact">Sponor</a> |
+      <%= link_to 'About', about_path %>
   	  &copy; 2009 Shanghai on Rails, JavaEye
   </div>
 

@@ -102,11 +102,25 @@ a:link {color:#b41818;}
 a:hover {color:#b41818; text-decoration: none;}
 
 h1, h2, h3, h4, h5, h6 {
-	color: #F5000C;
-}    
+  color: #F5000C;
+}
 
 h1 { font-size:200%; }
 h2 { font-size:170%; font-weight: normal;}
 h3 { font-size:105%; border-bottom: 1px solid #ddd;}
 h4 { font-size:120%; }
 h5 { font-size:100%; }
+
+.speaker, .sponsor {
+  border-top: 2px dotted #ddd;
+  padding-top: 10px;
+}
+.speaker img, .sponsor img {
+  width: 150px;
+  float: left;
+  margin: 0px 10px 10px 10px;
+}
+
+.speaker p, .sponsor p {
+  margin-left: 170px;
+}
