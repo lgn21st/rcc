@@ -5,6 +5,8 @@ ActionController::Routing::Routes.draw do |map|
     home.sponsors 'sponsors',:action => 'sponsors'
     home.speakers 'speakers',:action => 'speakers'
   end
+  
+  map.resource :session
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
@@ -59,4 +61,4 @@ ActionController::Routing::Routes.draw do |map|
   map.comatose_admin 'cms'
   map.comatose_root ''
 end
-ActionController::Routing::Translator.i18n('en','zh-CN')
+ActionController::Routing::Translator.i18n('en','zh-CN')     
