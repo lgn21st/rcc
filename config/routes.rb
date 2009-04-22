@@ -2,8 +2,10 @@ ActionController::Routing::Routes.draw do |map|
   map.with_options :controller => 'home' do |home|
     home.root  
     home.about 'intro',:action => 'about'
+    home.location 'loc', :action => 'location'
     home.sponsors 'sponsors',:action => 'sponsors'
     home.speakers 'speakers',:action => 'speakers'
+    home.register 'register', :action => 'register'
   end
   
   map.resource :session
@@ -14,7 +16,7 @@ ActionController::Routing::Routes.draw do |map|
   map.signup '/signup', :controller => 'users', :action => 'new'
   map.resources :users
 
-#  map.resource :session, :collection => {:set_language => :put}
+  map.resource :session, :collection => {:set_language => :put}
 
   # The priority is based upon order of creation: first created -> highest priority.
 

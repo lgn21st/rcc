@@ -21,14 +21,14 @@
     </div>
 
     <div id="nav">
-	  <ul>
-		<li><%=link_to t('home'),root_path %></li>
-		<li><%=link_to t('about'),about_path %></li>
-		<li class='logo'>
-			<img src="/images/logo.png" alt="Ruby Conf China 2009" />
-		</li>
-		<li><%=link_to t('sponsor'),sponsors_path %></li>
-		<li><%=link_to t('speaker'),speakers_path %></li>
+    <ul>
+      <li><%=link_to t('loc'),location_path %></li>
+      <li><%=link_to t('register'),register_path %></li>
+      <li class='logo'>
+        <a href="/"><img src="/images/logo.png" alt="Ruby Conf China 2009" /></a>
+      </li>
+      <li><%=link_to t('sponsor'),sponsors_path %></li>
+      <li><%=link_to t('speaker'),speakers_path %></li>
       </ul>
     </div>
   </div>
@@ -43,14 +43,9 @@
 </div> 
   <div id="footer">
     <p>
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a> |
-      <a href="/en/contact">Contact US</a>                              
-      <br />
+      <a href="/en/contact">Contact</a> |
+      <a href="/en/contact">Sponor</a> |
+      <%= link_to 'About', about_path %>
   	  &copy; 2009 Shanghai on Rails, JavaEye
   </div>
 

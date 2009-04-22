@@ -10,3 +10,5 @@ en:
   location: "Shanghai China"
   venue: "Shanghai Everbright Convention & Exhibition Center"
   address: "(2F, 66 Caobao Road, Xuhui district, Shanghai, China)"
+  loc: "location"
+  register: "register"
