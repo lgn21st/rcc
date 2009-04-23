@@ -1,4 +1,35 @@
 <div class='span-14'>
+  <div class="default">
+  <ul>
+    <li>
+      <img src="/images/speakers/matz.jpg" width="170" height="170" /><br />
+    </li>
+    
+    <li>
+      <img src="/images/speakers/robbin.jpg" width="170" height="170" /><br />
+    </li>
+    
+    <li>
+      <img src="/images/speakers/matz.jpg" width="170" height="170" />
+    </li>
+    
+    <li>
+      <img src="/images/speakers/robbin.jpg" width="170" height="170"/>
+    </li>
+  </ul>
+
+  </div>
+  
+  <script type="text/javascript" charset="utf-8">
+    $(function() {
+        $(".default").jCarouselLite({
+            auto: true,
+            speed: 1500
+        });
+    });
+    
+    
+  </script>
 	<%= render :comatose=> "#{params[:locale]}/front" %>
 </div> 
 
