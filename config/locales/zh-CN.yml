@@ -4,6 +4,8 @@
 "zh-CN":
   home: "首页"
   about: "关于"
+  loc: '地点'
+  register: 注册 
   sponsor: "赞助商"
   speaker: "演讲者"
   event_date: "2009年5月21号"

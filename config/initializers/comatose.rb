@@ -1,11 +1,10 @@
 Comatose.configure do |config|
   # Sets the text in the Admin UI's title area
-  #config.admin_title = "EasyUsability"
-  #config.admin_sub_title = "The fastest, easiest, and cheapest way to usability test!"
+
   config.includes << :authenticated_system
   # Includes AuthenticationSystem in the ComatoseAdminController
   config.admin_includes << :authenticated_system
-  config.helpers <<  :application_helper
+#  config.helpers <<  :application_helper
 
   # Calls :login_required as a before_filter
   config.admin_authorization do

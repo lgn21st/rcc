@@ -116,11 +116,12 @@ h5 { font-size:100%; }
   padding-top: 10px;
 }
 .speaker img, .sponsor img {
-  width: 150px;
+  width: 90px;
+height:90px;
   float: left;
   margin: 0px 10px 10px 10px;
 }
 
 .speaker p, .sponsor p {
-  margin-left: 170px;
+  margin-left: 120px;
 }
