@@ -12,3 +12,5 @@ en:
   address: "(2F, 66 Caobao Road, Xuhui district, Shanghai, China)"
   loc: "location"
   register: "register"
+  thanks: 'Thanks'
+  signup_success: "Thanks for your interesting on this meeting, we've received your application. Please check your mailbox on May 10, we'll send ticket to every attendee according to FIFO."

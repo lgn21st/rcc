@@ -1,11 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :attendees
+
   map.with_options :controller => 'home' do |home|
     home.root  
     home.about 'program',:action => 'about'
     home.location 'loc', :action => 'location'
     home.sponsors 'sponsors',:action => 'sponsors'
     home.speakers 'speakers',:action => 'speakers'
-    home.reg 'reg', :action => 'register'
+    home.reg 'signup', :action => 'new', :controller => 'attendees'
   end
   
   map.resource :session

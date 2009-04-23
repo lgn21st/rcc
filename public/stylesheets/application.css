@@ -125,3 +125,26 @@ height:90px;
 .speaker p, .sponsor p {
   margin-left: 120px;
 }
+
+fieldset {
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  width: 500px;
+  background-color: #FFFFFF;
+}
+
+fieldset label {
+  display:block;
+  float:left;
+  width: 100px;
+  text-align: right;
+  height: 1.3em;
+  padding: 0 10px;
+  color: #00AA00;
+}
+
+fieldset input {
+  background-color: #DBFDFF;
+  border: 1px solid;
+  height: 16px;
+}

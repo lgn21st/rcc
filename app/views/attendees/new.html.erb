@@ -1,0 +1,57 @@
+<h1>Register</h1>
+
+<% form_for(@attendee) do |f| %>
+  <%= f.error_messages %>
+  <legend></legend>
+  <fieldset>
+  <p>
+    <%= f.label :name, 'Name *' %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email, 'EMail *'%>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :city, 'City *' %>
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :state, 'State *' %>
+    <%= f.text_field :state %>
+  </p>
+  <p>
+    <%= f.label :country, 'Country *' %>
+    <%= f.country_select :country, ['China'] %>
+  </p>
+  <p>
+    <%= f.label :company, 'Company *' %>
+    <%= f.text_field :company %>
+  </p>
+  <p>
+    <%= f.label :website %>
+    <%= f.text_field :website %>
+  </p>
+  <p>
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+  </p>
+  <p>
+    <%= f.label :address1 %>
+    <%= f.text_field :address1, :size => 40 %>
+  </p>
+  <p>
+    <%= f.label :address2 %>
+    <%= f.text_field :address2, :size => 40 %>
+  </p>
+  <p>
+    <%= f.label :zipcode %>
+    <%= f.text_field :zipcode %>
+  </p>
+  </fieldset>
+  <center>
+    <p>
+      <%= f.submit 'Submit' %>
+    </p>
+  </center>
+<% end %>

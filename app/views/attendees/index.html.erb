@@ -1,0 +1,36 @@
+<h1>All registers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Website</th>
+    <th>Company</th>
+    <th>Phone number</th>
+    <th>Address1</th>
+    <th>Address2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>Zipcode</th>
+  </tr>
+
+<% @attendees.each do |attendee| %>
+  <tr>
+    <td><%=h attendee.name %></td>
+    <td><%=h attendee.email %></td>
+    <td><%=h attendee.website %></td>
+    <td><%=h attendee.company %></td>
+    <td><%=h attendee.phone_number %></td>
+    <td><%=h attendee.address1 %></td>
+    <td><%=h attendee.address2 %></td>
+    <td><%=h attendee.city %></td>
+    <td><%=h attendee.state %></td>
+    <td><%=h attendee.country %></td>
+    <td><%=h attendee.zipcode %></td>
+    <td><%= link_to 'Show', attendee %></td>
+    <td><%= link_to 'Edit', edit_attendee_path(attendee) %></td>
+    <td><%= link_to 'Destroy', attendee, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
