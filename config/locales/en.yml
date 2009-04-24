@@ -14,3 +14,13 @@ en:
   register: "register"
   thanks: 'Thanks'
   signup_success: "Thanks for your interesting on this meeting, we've received your application. Please check your mailbox on May 10, we'll send ticket to every attendee according to FIFO."
+  email: 'Email *'
+  name: 'Name *'
+  city: 'City *' 
+  state: 'State *'
+  country: 'Country *' 
+  company: 'Company *'
+  registion: 'Register'
+  website: Website/blog
+  phone: phone
+  submit: submit

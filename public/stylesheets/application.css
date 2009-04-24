@@ -148,3 +148,20 @@ fieldset input {
   border: 1px solid;
   height: 16px;
 }
+
+#attendee_description{
+	width:320px;
+	height:120px;
+	background-color: #DBFDFF;
+    border: 1px solid;
+}
+
+.reg_form{
+	margin-left:60px;
+}
+
+.image-submit{
+	width:113px;
+	height:28px;
+	border:none;
+}

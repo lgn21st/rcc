@@ -1,57 +1,55 @@
-<h1>Register</h1>
-
+<h1><%= t :registion %></h1>
+<div class='reg_form'>
 <% form_for(@attendee) do |f| %>
   <%= f.error_messages %>
   <legend></legend>
   <fieldset>
   <p>
-    <%= f.label :name, 'Name *' %>
+    <%= f.label :name, t(:name) %>
     <%= f.text_field :name %>
   </p>
   <p>
-    <%= f.label :email, 'EMail *'%>
+    <%= f.label :email, t(:email) %>
     <%= f.text_field :email %>
   </p>
   <p>
-    <%= f.label :city, 'City *' %>
+    <%= f.label :city, t(:city) %>
     <%= f.text_field :city %>
   </p>
   <p>
-    <%= f.label :state, 'State *' %>
+    <%= f.label :state, t('state') %>
     <%= f.text_field :state %>
   </p>
   <p>
-    <%= f.label :country, 'Country *' %>
-    <%= f.country_select :country, ['China'] %>
+    <%= f.label :country, t('country') %>
+    <%= localized_country_select_tag "attendee[country]","CN"%>
   </p>
   <p>
-    <%= f.label :company, 'Company *' %>
+    <%= f.label :company, t('company') %>
     <%= f.text_field :company %>
   </p>
   <p>
-    <%= f.label :website %>
+    <%= f.label :website, t('website') %>
     <%= f.text_field :website %>
   </p>
   <p>
-    <%= f.label :phone_number %>
+    <%= f.label :phone_number, t('phone') %>
     <%= f.text_field :phone_number %>
   </p>
   <p>
-    <%= f.label :address1 %>
-    <%= f.text_field :address1, :size => 40 %>
-  </p>
-  <p>
-    <%= f.label :address2 %>
-    <%= f.text_field :address2, :size => 40 %>
-  </p>
-  <p>
-    <%= f.label :zipcode %>
-    <%= f.text_field :zipcode %>
-  </p>
-  </fieldset>
+    <%= f.label :description, t('description') %>
+    <%= f.text_area :description %>
+  </p>      
   <center>
-    <p>
-      <%= f.submit 'Submit' %>
+    <p>                                      
+	<% if params[:locale] == 'en' -%>
+      <%= image_submit_tag '/images/submit_en.gif', :class => 'image-submit' %>
+	<% else -%>                    
+	  <%= image_submit_tag '/images/submit_cn.gif', :class => 'image-submit' %>
+	<% end %>
     </p>
   </center>
+  </fieldset>
+
 <% end %>
+</div>

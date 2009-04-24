@@ -14,6 +14,17 @@
   address: "中国上海漕宝路66号B座5楼" 
   thanks: '非常感谢'
   signup_success: '非常感谢您关注本次会议，我们已经收到您的参会申请，请留意您的信箱，我们将在5月10号左右发出参会邀请函，由于参加人数较多，邀请函将根据先到先得得方式发送。'
+  email: '电子邮件 *'
+  name: '名称 *'
+  city: '城市 *' 
+  state: '省 *'
+  country: '国家 *' 
+  company: '公司 *'
+  registion: '占个座'
+  description: '介绍'
+  website: 网站/博客
+  phone: 联系电话
+  submit: 提交
   
   date:
     formats:
@@ -115,6 +126,20 @@
       last_word_connector: ", 和 "
   
   activerecord:
+    models:
+      attendee: 参加者信息 
+    attributes:
+      attendee:
+          email: '电子邮件'
+          name: '名称'
+          city: '城市' 
+          state: '省'
+          country: '国家' 
+          company: '公司'
+          description: '介绍'
+          website: 网站/博客
+          phone: 联系电话
+          submit: 提交
     errors:
       template:
         header: 
@@ -140,7 +165,7 @@
         less_than: "必须小于 {{count}}"
         less_than_or_equal_to: "必须小于或等于 {{count}}"
         odd: "必须为单数"
-        even: "必须为双数"
-  
+        even: "必须为双数" 
+
 
   
