@@ -170,3 +170,10 @@ fieldset select{
 	height:28px;
 	border:none;
 }
+
+.sponsor_logo{
+	text-align:center;
+} 
+.sponsor_logo img{
+	margin-bottom:10px;
+}

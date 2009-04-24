@@ -1,5 +1,5 @@
 
-<div class='span-14'>
+<div class='span-13 append-1'>
   <h2>Speakers</h2>   
 <% if false -%>      
   <div class="default">
@@ -26,8 +26,6 @@
             speed: 1500
         });
     });
-    
-    
   </script>  
 <% end -%>
 	<%= render :comatose=> "#{params[:locale]}/front" %>
@@ -35,6 +33,10 @@
 
 <div class='span-4 last'>
    <h2><%= t('sponsor')%></h2>
-   <%= render :comatose=> "sponsors" %> 
+<div class=' sponsor_logo'> 
+	<%=link_to image_tag('sponsors/ekohe.gif'),"http://www.ekohe.com/"%>
+	<%=link_to image_tag('sponsors/tg.gif'),"http://sites.google.com/site/tengusoftwaredevelopment/Home"%> 
+</div>
+   <%#= render :comatose=> "sponsors" %> 
 </div>
 
