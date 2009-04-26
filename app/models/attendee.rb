@@ -4,7 +4,7 @@ class Attendee < ActiveRecord::Base
   validates_length_of       :name,    :within => 3..40
   validates_uniqueness_of   :email
 
-  validates_format_of       :name,     :with => Authentication.name_regex,  :message => Authentication.bad_name_message, :allow_nil => true
+  validates_format_of       :name,     :with => Authentication.name_regex,  :message => Authentication.bad_name_message
   validates_length_of       :name,     :maximum => 100
 
   validates_presence_of     :email

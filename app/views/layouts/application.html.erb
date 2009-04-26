@@ -17,14 +17,16 @@
 	</div>                  
   <div id="header" class="clear span-18">
     <div id="nav">
-    <ul>
-      <li><%=link_to t('about'),about_path %></li>
+    <ul>     
+	 <li><%=link_to t('about'),about_path %></li>
+      <li><%=link_to t('pro'),program_path %></li>
       <li><%=link_to t('register'),reg_path %></li>
       <li class='logo'>
         <a href="/"><img src="/images/logo.png" alt="Ruby Conf China 2009" /></a>
       </li>
       <li><%=link_to t('sponsor'),sponsors_path %></li>
       <li><%=link_to t('speaker'),speakers_path %></li>
+	<li><%=link_to t('contact'),contacts_path %> </li>
       </ul>
     </div>
   </div>
@@ -38,11 +40,7 @@
   <hr />
 </div> 
   <div id="footer">
-    <p>
-      <a href="/en/contact">Contact</a> |
-      <a href="/en/contact">Sponor</a> |
-      <%= link_to 'About', about_path %>
-  	  &copy; 2009 Shanghai on Rails, JavaEye
+ &copy; 2009 www.rubyconfchina.com 
   </div>
 
 </body>

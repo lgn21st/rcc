@@ -3,15 +3,15 @@
 
 en:
   home: "Home" 
-  about: "program"
+  about: "About"
   sponsor: "Sponsors"
-  speaker: "speakers"
+  speaker: "Speakers"
   event_date: "May 21st,2009"
   location: "Shanghai China"
   venue: "Shanghai Everbright Convention & Exhibition Center"
   address: "(2F, 66 Caobao Road, Xuhui district, Shanghai, China)"
   loc: "location"
-  register: "register"
+  register: "Register"
   thanks: 'Thanks'
   signup_success: "Thanks for your interesting on this meeting, we've received your application. Please check your mailbox on May 10, we'll send ticket to every attendee according to FIFO."
   email: 'Email *'
@@ -24,4 +24,24 @@ en:
   website: Website/blog
   phone: phone
   submit: submit
-  description: Description yourself
+  description: Descript yourself
+  orgnizer: Orgnizer
+  be_sponsor: Be sponsor  
+  contact: Contact
+  pro: Program 
+  contact_us: Contact Us
+  sponsorship: sponsorship
+  orgnizer:  Orgnizer
+  oversea: Us/Europe 
+  cn: China
+  ja: Japan
+  robbin: Robbin fan
+  yuanyi: Yuanyi zhang
+  ouspec: 欧阳瑞芳
+  koz: Koz Masumitsu
+  scott: Scott Ballantyne
+  email: E-mail
+  tel: Tel
+  mob: Mob
+  help: any help
+  contact_orgnizer: Contact orgnizer

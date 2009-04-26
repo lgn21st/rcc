@@ -2,16 +2,17 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :attendees
 
   map.with_options :controller => 'home' do |home|
-    home.root  
-    home.about 'program',:action => 'about'
+    home.root
+    home.about 'intro',:action => 'intro'  
+    home.program 'program',:action => 'program'
     home.location 'loc', :action => 'location'
     home.sponsors 'sponsors',:action => 'sponsors'
     home.speakers 'speakers',:action => 'speakers'
-    home.reg 'signup', :action => 'new', :controller => 'attendees'
+    home.contacts 'contact',:action => 'contact'
   end
   
   map.resource :session
-
+  map.reg 'signup', :action => 'new', :controller => 'attendees'    
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'

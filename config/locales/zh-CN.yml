@@ -25,6 +25,26 @@
   website: 网站/博客
   phone: 联系电话
   submit: 提交
+  orgnizer: 组织者
+  be_sponsor: 参与赞助  
+  contact: 联系我们
+  pro: 议程 
+  contact_us: 联系我们
+  sponsorship: 赞助计划
+  orgnizer:  组织者
+  oversea: 欧美 
+  cn: 中国
+  ja: 日本
+  robbin: 范 凯
+  yuanyi: 张元一
+  ouspec: 欧阳瑞芳
+  koz: 増満工将(koz)
+  scott: Scott Ballantyne
+  email: 电子邮件
+  tel: 电话
+  mob: 手机
+  help: 任何帮助
+  contact_orgnizer: 联系组织者
   
   date:
     formats:

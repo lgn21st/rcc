@@ -1,6 +1,6 @@
 <% body_tag(map = true) %>    
 <h1><%= t('about')%></h1>      
-<%= render :comatose=> "#{params[:locale]}/program" %>   
+
 <% content_for :javascripts_tag do %>
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAE4ZY3N7fdhJWRXy60lvXGRS7FvA-2v6bxheHfngQ-fhkPBRyBBQLQQj5P7hN6E5vtiIc_6J6XWmG5g&hl=<%=params[:locale]%>"
       type="text/javascript"></script>
@@ -51,3 +51,4 @@
 <div id="map">
    <div id="map_canvas"></div>  
 </div>
+<%= render :comatose=> "#{params[:locale]}/program" %>

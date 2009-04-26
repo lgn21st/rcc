@@ -34,9 +34,14 @@
 <div class='span-4 last'>
    <h2><%= t('sponsor')%></h2>
 <div class=' sponsor_logo'> 
-	<%=link_to image_tag('sponsors/ekohe.gif'),"http://www.ekohe.com/"%>
-	<%=link_to image_tag('sponsors/tg.gif'),"http://sites.google.com/site/tengusoftwaredevelopment/Home"%> 
+	<%=link_to image_tag('sponsors/ekohe.gif'),"http://www.ekohe.com/",:target => '_blank'%>
+	<%=link_to image_tag('sponsors/tg.gif'),"http://sites.google.com/site/tengusoftwaredevelopment/Home",:target => '_blank'%>
+	<div class='be_sponsor'>
+		 <%=link_to t('be_sponsor'),contacts_path %>
+	</div>
 </div>
-   <%#= render :comatose=> "sponsors" %> 
+	<h2><%= t('orgnizer') %></h2>
+	<%=link_to image_tag('javaeye-logo.gif'),'http://www.javaeye.com',:target => '_blank'%>
+	<%=link_to image_tag('shanghaionrails-logo.gif'),'http://www.shanghaionrails.com',:target => '_blank'%>
 </div>
 
