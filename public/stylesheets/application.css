@@ -134,10 +134,10 @@ fieldset {
 fieldset label {
   display:block;
   float:left;
-  width: 100px;
+  width: 125px;
   text-align: right;
   height: 1.3em;
-  padding: 0 10px;
+  padding: 2px 10px;
   color: #00AA00;
 }
 
@@ -151,7 +151,8 @@ fieldset select{
 	border-left: 1px solid #EFEFEF;
   font-size:14px;
   background-color: #DBFDFF;   
-  width:185px;
+  width:290px;
+  margin-top: 0px;
 }
 
 #attendee_description{

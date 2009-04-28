@@ -20,9 +20,38 @@ en:
   state: 'State *'
   country: 'Country *' 
   company: 'Company *'
+  title: 'Title *'
+  choose_title: 'Please choose your title'
+  CTO: 'CTO'
+  project_manager: 'Project manager'
+  architect: 'Architect'
+  senior_engineer: 'Senior engineer'
+  engineer: 'Engineer'
+  student: 'Student'
+  company_category: 'Company category *'
+  choose_company_category: 'Please choose your company category'
+  foreign_company: 'Foreign company'
+  private_company: 'Private company'
+  state_owned_company: 'State-owned company'
+  company_size: 'Company size *'
+  choose_company_size: 'Please choose your company size'
+  industry: 'Industry *'
+  choose_industry: 'Please choose industry'
+  web: 'Web'
+  profession_software: 'Profession software'
+  erp: 'ERP'
+  game_development: 'Game development'
+  media: 'Media'
+  e_commerce: 'E-Commerce'
+  other: 'Other'
+  work_experience: 'Work experience *'
+  choose_work_experience: 'Please choose your work experience'
+  ruby_experience: 'Ruby experience *'
+  choose_ruby_experience: 'Please choose your ruby experience'
+  interesting: 'Interesting'
   registion: 'Register'
-  website: Website/blog
-  phone: phone
+  website: Website/Blog
+  phone: Phone number *
   submit: submit
   description: Descript yourself
   orgnizer: Orgnizer
@@ -40,7 +69,7 @@ en:
   ouspec: ouspec
   koz: Koz Masumitsu
   scott: Scott Ballantyne
-  email: E-mail
+  email: E-mail *
   tel: Tel
   mob: Mob
   help: any help
