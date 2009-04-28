@@ -8,7 +8,7 @@ ActionController::Routing::Routes.draw do |map|
     home.location 'loc', :action => 'location'
     home.sponsors 'sponsors',:action => 'sponsors'
     home.speakers 'speakers',:action => 'speakers'
-    home.contacts 'contact',:action => 'contact'
+    home.contacts 'Contact',:action => 'contact'
   end
   
   map.resource :session
