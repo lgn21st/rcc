@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<title>Welcome to RubyConf China 2009</title> 
+<link href="/stylesheets/all.css?1240984896" media="screen" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/stylesheets/print.css" type="text/css" media="print">	 
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAE4ZY3N7fdhJWRXy60lvXGRS7FvA-2v6bxheHfngQ-fhkPBRyBBQLQQj5P7hN6E5vtiIc_6J6XWmG5g&hl=en"
+      type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+    var map = null;
+    var geocoder = null;
+
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+        map = new GMap2(document.getElementById("map_canvas"));
+        geocoder = new GClientGeocoder();
+		showAddress("中国上海漕宝路66号")
+      }
+    }
+
+    function showAddress(address) {
+      if (geocoder) {
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              alert("不能解析: " + address);
+            } else { 
+			html = "Shanghai Everbright Convention & Exhibition Center<br />(2F, 66 Caobao Road, Xuhui district, Shanghai, China)" 
+			var icon = new GIcon();
+			icon.iconSize=new GSize(32,32);
+			icon.shadowSize=new GSize(56,32);
+			icon.iconAnchor=new GPoint(16,32); 
+			icon.image = "/images/maplocation.png";
+			icon.shadow = "/images/gshadow.png";
+			icon.infoWindowAnchor=new GPoint(16,0);
+	        map.setCenter(point, 14);
+	        var marker = new GMarker(point, icon ,html);
+	        map.addOverlay(marker);
+			marker.openInfoWindowHtml(html);
+
+            }
+          }
+        );
+      }
+    }
+    </script>
+
+<!--[if IE]><link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection"><![endif]-->
+</head>
+<body onload='initialize()' onunload='GUnload()'>
+
+<div class="container">
+	<div id="languages" class='lang'>
+	  <a href="/">English</a> |
+	  <a href="/zh-CN">中文</a>
+	</div>                  
+  <div id="header" class="clear span-18">
+    <div id="nav">
+    <ul>     
+	 <li><a href="/about-us">About</a></li>
+      <li><a href="/program">Program</a></li>
+      <li><a href="/signup">Register</a></li>
+      <li class='logo'>
+        <a href="/"><img src="/images/logo.png" alt="Ruby Conf China 2009" /></a>
+      </li>
+      <li><a href="/sponsors">Sponsors</a></li>
+      <li><a href="/venue-info">Venue</a></li>
+	<li><a href="/contact-us">Contact</a> </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="content">
+    <div>
+      
+    </div>
+        
+<h1>Venue</h1>      
+  
+<span style='font-size:14px'>Shanghai Everbright Convention & Exhibition Center<br />
+(2F, 66 Caobao Road, Xuhui district, Shanghai, China)</span>
+<img src='/images/venue.jpg' />
+<h2>Traffic</h2>
+<div id="map">
+   <div id="map_canvas"></div>  
+</div> 
+Metro line 1 caobao station<br />
+bus: 92#、43#、120#、131#　
+　  
+
+  </div> 
+  <hr />
+</div> 
+  <div id="footer">
+ &copy; 2009 www.rubyconfchina.com 
+  </div>
+
+</body>
+</html>

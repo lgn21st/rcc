@@ -4,8 +4,8 @@ ActionController::Routing::Routes.draw do |map|
   map.with_options :controller => 'home' do |home|
     home.root
     home.about 'about-us',:action => 'intro'  
-    home.program 'program',:action => 'program'
-    home.location 'venue-info', :action => 'location'
+    home.program 'program-info',:action => 'program'
+    home.location 'venue-traffic', :action => 'location'
     home.sponsors 'sponsors',:action => 'sponsors'
     home.speakers 'speakers',:action => 'speakers'
     home.contacts 'contact-us',:action => 'contact'

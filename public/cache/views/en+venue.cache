@@ -1,0 +1,10 @@
+"J<span style='font-size:14px'>Shanghai Everbright Convention & Exhibition Center<br />
+(2F, 66 Caobao Road, Xuhui district, Shanghai, China)</span>
+<img src='/images/venue.jpg' />
+<h2>Traffic</h2>
+<div id="map">
+   <div id="map_canvas"></div>  
+</div> 
+Metro line 1 caobao station<br />
+bus: 92#、43#、120#、131#　
+　
