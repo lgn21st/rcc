@@ -1,33 +1,5 @@
 
 <div class='span-13 append-1'>
-  <h2>Speakers</h2>   
-<% if false -%>      
-  <div class="default">
-    <ul>
-      <li>
-        <img src="/images/speakers/matz.jpg" width="170" height="170" /><br />
-      </li>
-      <li>
-        <img src="/images/speakers/robbin.jpg" width="170" height="170" /><br />
-      </li>
-      <li>
-        <img src="/images/speakers/matz.jpg" width="170" height="170" />
-      </li>
-      <li>
-        <img src="/images/speakers/robbin.jpg" width="170" height="170"/>
-      </li>
-    </ul>
-  </div>
-  
-  <script type="text/javascript" charset="utf-8">
-    $(function() {
-        $(".default").jCarouselLite({
-            auto: true,
-            speed: 1500
-        });
-    });
-  </script>  
-<% end -%>
 	<%= render :comatose=> "#{params[:locale]}/front" %>
 </div> 
 
@@ -37,11 +9,14 @@
 	<%=link_to image_tag('sponsors/ekohe.gif'),"http://www.ekohe.com/",:target => '_blank'%>
 	<%=link_to image_tag('sponsors/tg.gif'),"http://sites.google.com/site/tengusoftwaredevelopment/Home",:target => '_blank'%>
 	<div class='be_sponsor'>
-		 <%=link_to t('be_sponsor'),contacts_path %>
+		 <b><%=link_to t('be_sponsor'),contacts_path %></b>
 	</div>
 </div>
 	<h2><%= t('orgnizer') %></h2>
 	<%=link_to image_tag('javaeye-logo.gif'),'http://www.javaeye.com',:target => '_blank'%>
-	<%=link_to image_tag('shanghaionrails-logo.gif'),'http://www.shanghaionrails.com',:target => '_blank'%>
+	<%=link_to image_tag('shanghaionrails-logo.gif'),'http://www.shanghaionrails.com',:target => '_blank'%> 
+	 <div class='be_sponsor'>
+		<b><%=link_to t('about'),contacts_path %></b> 
+	 </div>
 </div>
 
