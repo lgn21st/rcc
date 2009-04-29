@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   
   private
     def detect_language
-      request_language = session[:language] || request.env['HTTP_ACCEPT_LANGUAGE']
+      request_language = request.env['HTTP_ACCEPT_LANGUAGE']
       I18n.locale = request_language if request_language && File.exist?("#{RAILS_ROOT}/config/locales/#{request_language}.yml")
     end
 end

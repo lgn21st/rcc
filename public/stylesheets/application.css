@@ -32,7 +32,7 @@ th,td{
 }       
 
 #nav{
-	padding-left:20px;
+	padding-left:60px;
 	text-align:center;
 }
 
@@ -173,7 +173,7 @@ fieldset select{
 }
 
 .reg_form{
-	margin-left:60px;
+	margin-left:100px;
 }
 
 .image-submit{
