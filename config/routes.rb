@@ -3,12 +3,12 @@ ActionController::Routing::Routes.draw do |map|
 
   map.with_options :controller => 'home' do |home|
     home.root
-    home.about 'intro',:action => 'intro'  
+    home.about 'about-us',:action => 'intro'  
     home.program 'program',:action => 'program'
-    home.location 'loc', :action => 'location'
+    home.location 'venue-info', :action => 'location'
     home.sponsors 'sponsors',:action => 'sponsors'
     home.speakers 'speakers',:action => 'speakers'
-    home.contacts 'Contact',:action => 'contact'
+    home.contacts 'contact-us',:action => 'contact'
   end
   
   map.resource :session
