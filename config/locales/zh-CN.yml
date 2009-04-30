@@ -74,7 +74,8 @@
   mob: 手机
   help: 任何帮助
   contact_orgnizer: 联系组织者
-  
+  action: "我们现在正式开放注册，所以现在就" 
+  now: 吧
   date:
     formats:
       default: "%Y-%m-%d"

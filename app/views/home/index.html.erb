@@ -1,6 +1,10 @@
 
 <div class='span-13 append-1'>
 	<%= render :comatose=> "#{params[:locale]}/front" %>
+	<p class='reg'>
+	<%=t('action')%>
+	<%=link_to t('register'),reg_path%><%=t('now')%>!!
+	</p>
 </div> 
 
 <div class='span-4 last'>
