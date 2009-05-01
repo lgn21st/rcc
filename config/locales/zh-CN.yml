@@ -74,7 +74,8 @@
   mob: 手机
   help: 任何帮助
   contact_orgnizer: 联系组织者
-  
+  action: "我们现在正式开放注册，所以现在就" 
+  now: 吧
   date:
     formats:
       default: "%Y-%m-%d"
@@ -189,6 +190,13 @@
           website: 网站/博客
           phone_number: 联系电话
           submit: 提交
+          industry: 行业
+          company_category: 公司类型 
+          company_size: 公司规模 
+          work_experience: 工作经验
+          ruby_experience: Ruby经验
+          interesting: 兴趣爱好
+          title: 职位
     errors:
       template:
         header: 

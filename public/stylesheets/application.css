@@ -12,6 +12,15 @@
   z-index: 5;
 }
 
+th,td{
+	text-align:center;
+}
+
+.space{
+  background-color: #DBFDFF;
+  font-weight:bold;
+}
+
 #navigation a {
   text-decoration: none;
   color: #666;
@@ -23,7 +32,7 @@
 }       
 
 #nav{
-	padding-left:20px;
+	padding-left:60px;
 	text-align:center;
 }
 
@@ -53,11 +62,12 @@ body {
   background: url(/images/background.jpg) repeat-x;
   font: 0.8em/1.5 "arial",sans-serif; 
   color: #303030; 
-}  
+}
+
 
 #map_canvas{
-	width:700px;
-	height:300px;
+	width:600px;
+	height:200px;
 }
 
 #logo { 
@@ -163,7 +173,7 @@ fieldset select{
 }
 
 .reg_form{
-	margin-left:110px;
+	margin-left:100px;
 }
 
 .image-submit{
@@ -187,4 +197,22 @@ fieldset select{
 
 .contact p{
 	padding-left:10px;
+}          
+
+.info { list-style:square;}
+.info b{
+	padding-right:10px;
+}
+.info span{
+	color:#F5000C;
+	font-size: 14px;
+	font-weight:bold;  
+} 
+
+.reg{  
+	padding-left:120px;
+	font:14px Verdana, Arial, Helvetica, sans-serif; 
+	font-weight:bold;
+	color:#F5000C;            
+	font-size:14px; 
 }

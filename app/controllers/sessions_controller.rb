@@ -34,16 +34,6 @@ class SessionsController < ApplicationController
     redirect_back_or_default('/')
   end
 
-  def set_language
-    request_language = params[:language]
-    
-    if request_language && File.exist?("#{RAILS_ROOT}/config/locales/#{request_language}.yml")
-      I18n.locale = request_language 
-      session[:language] = request_language
-    end
-    
-    redirect_to :back
-  end
 protected
   # Track failed login attempts
   def note_failed_signin

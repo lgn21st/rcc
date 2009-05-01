@@ -9,11 +9,4 @@ class ApplicationController < ActionController::Base
   # filter_parameter_logging :password
   before_filter :set_locale_from_url
 
-#  before_filter :detect_language
-  
-  private
-    def detect_language
-      request_language = session[:language] || request.env['HTTP_ACCEPT_LANGUAGE']
-      I18n.locale = request_language if request_language && File.exist?("#{RAILS_ROOT}/config/locales/#{request_language}.yml")
-    end
 end

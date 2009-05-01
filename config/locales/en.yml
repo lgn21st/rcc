@@ -10,7 +10,7 @@ en:
   location: "Shanghai China"
   venue: "Shanghai Everbright Convention & Exhibition Center"
   address: "(2F, 66 Caobao Road, Xuhui district, Shanghai, China)"
-  loc: "location"
+  loc: "Venue"
   register: "Register"
   thanks: 'Thanks'
   signup_success: "Thanks for your interesting on this meeting, we've received your application. Please check your mailbox on May 10, we'll send ticket to every attendee according to FIFO."
@@ -55,7 +55,7 @@ en:
   submit: submit
   description: Descript yourself
   orgnizer: Orgnizer
-  be_sponsor: Be sponsor  
+  be_sponsor: List here  
   contact: Contact
   pro: Program 
   contact_us: Contact Us
@@ -74,3 +74,5 @@ en:
   mob: Mob
   help: any help
   contact_orgnizer: Contact orgnizer
+  action: "We are now open for register, so"
+  now: now 
