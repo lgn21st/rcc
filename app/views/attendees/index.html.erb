@@ -4,30 +4,28 @@
   <tr>
     <th>Name</th>
     <th>Email</th>
-    <th>Website</th>
+    <th>Title</th>
     <th>Company</th>
+    <th>Company Size</th>
+    <th>Company Category</th>
+    <th>Industry</th>
+    <th>Work experience</th>    
     <th>Phone number</th>
     <th>City</th>
-    <th>State</th>
-    <th>Country</th>
   </tr>
 
 <% @attendees.each do |attendee| %>
   <tr>
     <td><%=h attendee.name %></td>
     <td><%=h attendee.email %></td>
-    <td><%=h attendee.website %></td>
+    <td><%=h attendee.title %></td>
     <td><%=h attendee.company %></td>
+    <td><%=h attendee.company_size %></td>
+    <td><%=h attendee.company_category %></td>
+    <td><%=h attendee.industry %></td>
+    <td><%=h attendee.work_experience %></td>
     <td><%=h attendee.phone_number %></td>
-    <td><%=h attendee.address1 %></td>
-    <td><%=h attendee.address2 %></td>
     <td><%=h attendee.city %></td>
-    <td><%=h attendee.state %></td>
-    <td><%=h attendee.country %></td>
-    <td><%=h attendee.zipcode %></td>
-    <td><%= link_to 'Show', attendee %></td>
-    <td><%= link_to 'Edit', edit_attendee_path(attendee) %></td>
-    <td><%= link_to 'Destroy', attendee, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
