@@ -67,7 +67,7 @@ body {
 
 #map_canvas{
 	width:600px;
-	height:200px;
+	height:400px;
 }
 
 #logo { 
@@ -124,7 +124,6 @@ h5 { font-size:100%; }
 }
 .speaker img, .sponsor img {
   width: 90px;
-height:90px;
   float: left;
   margin: 0px 10px 10px 10px;
 }
