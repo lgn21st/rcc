@@ -85,6 +85,22 @@ body {
   background: url(/images/shanghai_night.jpg) no-repeat; 
 } 
 
+#panel-left{   
+	font-family: helvetica;
+	line-height: 48px;
+	display: block;
+	font-weight: bold;
+	float:left;
+	padding: 45px 20px 10px 40px;
+	color:#ffffff;
+	font-size:28px;
+	width:380px;
+}
+
+#panel-left span{
+	font-size:14px;
+}
+
 #panel-right { float:right; width:230px; padding: 15px 20px 10px 10px; color:#ffffff;
 	text-align:right; 
 	font-family:Verdana;
@@ -215,3 +231,4 @@ fieldset select{
 	color:#F5000C;            
 	font-size:14px; 
 }
+
