@@ -8,20 +8,32 @@
 </div> 
 
 <div class='span-4 last'>
-   <h2><%= t('sponsor')%></h2>
-<div class=' sponsor_logo'> 
-	<%=link_to image_tag('sponsors/ekohe.gif'),"http://www.ekohe.com/",:target => '_blank'%>
-	<%=link_to image_tag('sponsors/tg.gif'),"http://sites.google.com/site/tengusoftwaredevelopment/Home",:target => '_blank'%>
-	<%=link_to image_tag('sponsors/caibangzi.gif', :width => "150"),"http://caibangzi.com/", :target => '_blank'%>
-	<div class='be_sponsor'>
-		 <b><%=link_to t('be_sponsor'),contacts_path %></b>
-	</div>
+  <h3><%= t('diamond_sponsor') %></h3>
+  <h3><%= t('platinum_sponsor') %></h3>
+   <div class=' sponsor_logo'>
+    <%=link_to image_tag('sponsors/pinpoint.jpg'),"http://www.pinpoint.cn/", :target => '_blank'%>
+  </div>
+  
+  <h3><%= t('golden_sponsor') %></h3>
+   <div class=' sponsor_logo'>  
+     <%=link_to image_tag('sponsors/caibangzi.gif', :width => "120"),"http://caibangzi.com/", :target => '_blank'%>
+  </div>
+  
+  <h3><%= t('silver_sponsor') %></h3>
+  <div class='be_sponsor'>
+    <b><%=link_to t('be_sponsor'),contacts_path %></b>
+  </div>
+  
+   <h3><%= t('partner')%></h3>
+  <div class=' sponsor_logo'>
+    <%=link_to image_tag('sponsors/ekohe.gif'),"http://www.ekohe.com/",:target => '_blank'%>
+    <%=link_to image_tag('sponsors/tg.gif'),"http://sites.google.com/site/tengusoftwaredevelopment/Home",:target => '_blank'%>
+  </div>
+  
+  <h3><%= t('orgnizer') %></h3>
+    <%=link_to image_tag('javaeye-logo.gif'),'http://www.javaeye.com',:target => '_blank',:alt=>"Javaeye logo"%>
+    <%=link_to image_tag('shanghaionrails-logo.gif'),'http://www.shanghaionrails.com',:target => '_blank'%> 
+  <div class='be_sponsor'>
+    <b><%=link_to t('about'),about_path %></b> 
+  </div>
 </div>
-	<h2><%= t('orgnizer') %></h2>
-	<%=link_to image_tag('javaeye-logo.gif'),'http://www.javaeye.com',:target => '_blank',:alt=>"Javaeye logo"%>
-	<%=link_to image_tag('shanghaionrails-logo.gif'),'http://www.shanghaionrails.com',:target => '_blank'%> 
-	 <div class='be_sponsor'>
-		<b><%=link_to t('about'),about_path %></b> 
-	 </div>
-</div>
-

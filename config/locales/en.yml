@@ -5,6 +5,11 @@ en:
   home: "Home" 
   about: "About"
   sponsor: "Sponsors"
+  diamond_sponsor: 'Diamond Sponsors'
+  platinum_sponsor: 'Platinum Sponsors'
+  golden_sponsor: 'Golden Sponsors'
+  silver_sponsor: 'Silver Sponsors'
+  partner: 'Partners'
   speaker: "Speakers"
   event_date: "May 21st,2009"
   location: "Shanghai China"
