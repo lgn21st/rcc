@@ -224,11 +224,14 @@ fieldset select{
 	font-weight:bold;  
 } 
 
-.reg{  
+.reg{      
+	font-family: helvetica;
+	line-height: 48px;
+	font-size:16px;
+	display: block;
+	letter-spacing: 2px;
 	padding-left:120px;
-	font:14px Verdana, Arial, Helvetica, sans-serif; 
 	font-weight:bold;
 	color:#F5000C;            
-	font-size:14px; 
-}
+} 
 
