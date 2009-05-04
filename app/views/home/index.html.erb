@@ -31,8 +31,10 @@
   </div>
   
   <h3><%= t('orgnizer') %></h3>
-    <%=link_to image_tag('javaeye-logo.gif'),'http://www.javaeye.com',:target => '_blank',:alt=>"Javaeye logo"%>
-    <%=link_to image_tag('shanghaionrails-logo.gif'),'http://www.shanghaionrails.com',:target => '_blank'%> 
+  <div class=' sponsor_logo'>  
+    <%=link_to image_tag('javaeye-logo.gif', :width => '120'),'http://www.javaeye.com',:target => '_blank',:alt=>"Javaeye logo"%>
+    <%=link_to image_tag('shanghaionrails-logo.gif', :width => '120'),'http://www.shanghaionrails.com',:target => '_blank'%> 
+  </div>
   <div class='be_sponsor'>
     <b><%=link_to t('about'),about_path %></b> 
   </div>
