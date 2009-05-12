@@ -39,6 +39,9 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+require "will_paginate" 
+
 ActionController::Base.cache_store = :file_store,  RAILS_ROOT + "/public/cache/"    
 Comatose.configure do |config|
   # Sets the text in the Admin UI's title area

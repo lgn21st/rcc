@@ -1,5 +1,11 @@
 <h1>All registers</h1>
 
+<p>
+  Total registers: <%= Attendee.count %>
+</p>
+
+<%= will_paginate @attendees %>
+
 <table>
   <tr>
     <th>Name</th>
@@ -9,7 +15,7 @@
     <th>Company Size</th>
     <th>Company Category</th>
     <th>Industry</th>
-    <th>Work experience</th>    
+    <th>Work experience</th>
     <th>Phone number</th>
     <th>City</th>
   </tr>
@@ -29,3 +35,5 @@
   </tr>
 <% end %>
 </table>
+
+<%= will_paginate @attendees %>
