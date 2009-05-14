@@ -5,16 +5,19 @@
 	<%=t('action')%>
 	<%=link_to t('register'),reg_path%><%=t('now')%>!!
 	</p>
+	
+	<h2><%= t('orgnizer') %></h2>
+	<p style="margin-left: 50px;">
+	  <%=link_to image_tag('sponsors/ekohe.gif', :width => '80'),"http://www.ekohe.com/",:target => '_blank'%>
+    <%=link_to image_tag('sponsors/tg.gif', :width => '80'),"http://sites.google.com/site/tengusoftwaredevelopment/Home",:target => '_blank'%>
+    <%=link_to image_tag('javaeye-logo.gif', :width => '100'),'http://www.javaeye.com',:target => '_blank',:alt=>"Javaeye logo"%>
+    <%=link_to image_tag('shanghaionrails-logo.gif', :width => '100'),'http://www.shanghaionrails.com',:target => '_blank'%>
+  </p>
 </div> 
 
 <div class='span-4 last'>
-  <h3><%= t('partner')%></h3>
-  <div class=' sponsor_logo'>
-    <%=link_to image_tag('sponsors/ekohe.gif'),"http://www.ekohe.com/",:target => '_blank'%>
-    <%=link_to image_tag('sponsors/tg.gif'),"http://sites.google.com/site/tengusoftwaredevelopment/Home",:target => '_blank'%>
-  </div>
-  
   <h3><%= t('diamond_sponsor') %></h3>
+    <%=link_to image_tag('sponsors/ekohe.gif'),"http://www.ekohe.com/",:target => '_blank'%>
   <h3><%= t('platinum_sponsor') %></h3>
    <div class=' sponsor_logo'>
     <%=link_to image_tag('sponsors/pinpoint.gif'),"http://www.pinpoint.cn/", :target => '_blank'%>
@@ -33,14 +36,5 @@
   
   <div class='be_sponsor'>
     <b><%=link_to t('be_sponsor'),contacts_path %></b>
-  </div>
-  
-  <h3><%= t('orgnizer') %></h3>
-  <div class=' sponsor_logo'>  
-    <%=link_to image_tag('javaeye-logo.gif', :width => '120'),'http://www.javaeye.com',:target => '_blank',:alt=>"Javaeye logo"%>
-    <%=link_to image_tag('shanghaionrails-logo.gif', :width => '120'),'http://www.shanghaionrails.com',:target => '_blank'%> 
-  </div>
-  <div class='be_sponsor'>
-    <b><%=link_to t('about'),about_path %></b> 
   </div>
 </div>
