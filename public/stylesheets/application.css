@@ -61,7 +61,8 @@ th,td{
 
 body {
   background: url(/images/background.jpg) repeat-x;
-  font: 0.8em/1.5 "arial",sans-serif; 
+  font: arial;
+	font-size:14px;
   color: #303030; 
 }
 
@@ -92,28 +93,20 @@ body {
 	display: block;
 	font-weight: bold;
 	float:left;
-	padding: 60px 20px 10px 150px;
+	padding: 60px 20px 10px 120px;
 	color:#ffffff;
 	font-size:28px;
-	width:380px;
+	width:480px;
+}
+
+#panel-left a{
+	color:#ffffff;     
 }
 
 #panel-left span{
 	font-size:14px;
 }
 
-#panel-right { float:right; width:230px; padding: 15px 20px 10px 10px; color:#ffffff;
-	text-align:right; 
-	font-family:Verdana;
-	  } 
-
-#panel-right .date{
-	font-size:28px;
-}                  
-
-#panel-right .location{
-	font-size:24px;
-}
 
 #footer { 
   height:122px; 
